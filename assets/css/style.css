@@ -410,7 +410,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero:before {
   content: "";
-  background: rgba(21, 5, 23, 0.5) linear-gradient(rgba(26, 0, 33, 0.5) 0%, rgba(26, 0, 33, 0.5) 5%, rgba(38, 6, 51, 0.5) 40%, rgba(9, 69, 236, 0.377) 76%, rgba(0, 4, 236, 0.7) 94%, rgba(31, 61, 228, 0.5) 100%) repeat scroll 0% 0%;
+  background: #05101780 linear-gradient(#00122180 0%, #00092180 5%, #061a3380 40%, #0973ec60 76%, #0082ecb3 94%, #1f85e480 100%) repeat scroll 0% 0%;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -774,9 +774,9 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: #112ed4;
+  background: #0082ecb3;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: inherit;
   background-image: url('../img/bgg/header-overlay.png');
   padding: 60px 0;
 }
@@ -812,6 +812,7 @@ section {
 .portfolio #portfolio-flters {
   list-style: none;
   margin-bottom: 20px;
+  
 }
 .portfolio #portfolio-flters li {
   cursor: pointer;
@@ -835,9 +836,11 @@ section {
 }
 .portfolio .portfolio-item .portfolio-img {
   overflow: hidden;
+  border-radius: 10px;
 }
 .portfolio .portfolio-item .portfolio-img img {
   transition: all 0.5s ease-in-out;
+  border-radius: 10px;
 }
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
@@ -849,6 +852,7 @@ section {
   transition: all ease-in-out 0.3s;
   background: rgba(0, 0, 0, 0.5);
   padding: 10px 15px;
+  border-radius: 10px;
 }
 .portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
@@ -869,6 +873,7 @@ section {
   top: calc(50% - 18px);
   color: #fff;
   transition: 0.3s;
+  
 }
 .portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
   color: #fdee18;
@@ -878,6 +883,9 @@ section {
 }
 .portfolio .portfolio-item:hover .portfolio-img img {
   transform: scale(1.2);
+  border-radius: 10px;
+  
+  
 }
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
@@ -891,6 +899,7 @@ section {
 }
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
+  border-radius: 10px;
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
@@ -1143,7 +1152,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #ffa790;
+  color: #009FE3;
 }
 .faq .faq-list .icon-show, .faq .faq-list .icon-close {
   font-size: 24px;
