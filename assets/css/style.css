@@ -644,7 +644,7 @@ section {
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;
-  filter: grayscale(100);
+  /* filter: grayscale(100); */
 }
 .clients img:hover {
   filter: none;
@@ -1352,7 +1352,7 @@ section {
 }
 #footer::before {
   content: "";
-  background: rgba(21, 5, 23, 0.5) linear-gradient(rgba(26, 0, 33, 0.5) 0%, rgba(26, 0, 33, 0.5) 5%, rgba(38, 6, 51, 0.5) 40%, rgba(9, 69, 236, 0.377) 76%, rgba(0, 4, 236, 0.493) 94%, rgba(31, 61, 228, 0.5) 100%) repeat scroll 0% 0%;
+  background: #05101780 linear-gradient(#00122180 0%, #00092180 5%, #061a3380 40%, #0973ec60 76%, #0082ec9a 94%, #1f85e480 100%) repeat scroll 0% 0%;
   position: absolute;
   left: 0;
   right: 0;
