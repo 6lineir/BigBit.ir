@@ -774,8 +774,10 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: #280a2c;
+  background: #112ed4;
   background-size: cover;
+  background-attachment: fixed;
+  background-image: url('../img/bgg/header-overlay.png');
   padding: 60px 0;
 }
 .cta h3 {
@@ -1334,19 +1336,19 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: url("../img/footer-bg.jpg") center center no-repeat;
+  background: url("../img/11hro.jpg") center center no-repeat;
   color: #fff;
   font-size: 14px;
   position: relative;
 }
 #footer::before {
   content: "";
+  background: rgba(21, 5, 23, 0.5) linear-gradient(rgba(26, 0, 33, 0.5) 0%, rgba(26, 0, 33, 0.5) 5%, rgba(38, 6, 51, 0.5) 40%, rgba(9, 69, 236, 0.377) 76%, rgba(0, 4, 236, 0.493) 94%, rgba(31, 61, 228, 0.5) 100%) repeat scroll 0% 0%;
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(2, 0, 2, 0.6);
   z-index: 1;
 }
 #footer .footer-top {
